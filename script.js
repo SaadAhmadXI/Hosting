@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById("searchInput");
 
     const subdirectories = [
-        { name: "Subdirectory 1", thumbnail: "subdir1/thumbnail.jpg", url: "https://example.com/subdir1" },
-        { name: "Subdirectory 2", thumbnail: "subdir2/thumbnail.jpg", url: "https://example.com/subdir2" },
-        { name: "Subdirectory 3", thumbnail: "subdir3/thumbnail.jpg", url: "https://example.com/subdir3" },
+        { name: "Battlefield 1", thumbnail: "Battlefield 1/thumbnail.jpg", url: "https://onelinkgames.site/Battlefield 1" },
+        { name: "Elden Ring", thumbnail: "Elden Ring/thumbnail.jpg", url: "https://onelinkgames.site/Elden Ring" },
+        { name: "FlatOut 4 Total Insanity", thumbnail: "FlatOut 4 Total Insanity/thumbnail.jpg", url: "https://onelinkgames.site/FlatOut 4 Total Insanity" },
+        { name: "Vosphia", thumbnail: "Vosphia/thumbnail.jpg", url: "https://onelinkgames.site/Vosphia" },
         // Add more subdirectories here
     ];
 
