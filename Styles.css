@@ -15,6 +15,7 @@ body {
     font-size: 2rem;
     box-shadow: 1px 1px 10px 5px rgb(63, 61, 61);
     margin-bottom: -0.7rem;
+    margin: 0 2rem;
 }
 
 .titleH {
@@ -32,7 +33,7 @@ body {
     gap: 27px;
     justify-content: center;
     align-items: center;
-
+    margin: 0 2rem;
 }
 
 .box {
@@ -45,6 +46,19 @@ body {
 .box img {
     width: 290px;
     height: 180px;
+}
+
+@media only screen and (max-width: 600px) {
+    .head {
+        margin: 0 1rem;
+    }
+    .titleH {
+        font-size: 2.5rem;
+    }
+    .body {
+        margin: 0 1rem;
+    }
+    
 }
 
 .search {
