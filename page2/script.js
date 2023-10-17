@@ -53,3 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial load of thumbnails
     displaySubdirectories(pageSubdirectories);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch('../pages.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('imported-content').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error fetching content: ', error);
+        });
+});
