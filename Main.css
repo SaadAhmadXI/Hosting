@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Images/BG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 1px 1px 10px 5px rgb(63, 61, 61);
+    margin-bottom: 0.6rem;
+}
+
+.titleH {
+    font-size: 3rem;
+    padding: 0.1 1rem;
+    margin: 0.2rem;
+}
+
+.body {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px 5px rgb(63, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail {
+    display: flex;
+    margin: 0 320px;
+    justify-content: center;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+hr {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.size,
+.pl {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.about,
+.para,
+.screenshot,
+.req {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.pics img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+.Download {
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: blue;
+    border-radius: 2rem;
+    border: 5px solid rgb(93, 93, 228);
+    transition: transform 1s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Download:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .head {
+        font-size: 1rem;
+    }
+    
+    .body {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+    
+    .para {
+        font-size: 0.9rem;
+    }
+    
+    .Download {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .head {
+        font-size: 0.5rem;
+    }
+
+    .body {
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .about,
+    .para,
+    .screenshot,
+    .req {
+        font-size: 0.8rem;
+    }
+
+    .list {
+        font-size: 0.8rem;
+    }
+
+    .Download {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .pics img {
+        max-width: 80%;
+        height: auto;
+        margin: 0.5rem;
+    }
+}
