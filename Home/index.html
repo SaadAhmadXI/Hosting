@@ -16,18 +16,6 @@
         <input type="text" id="searchInput" class="search" placeholder="Search...">
         <div class="body" id="thumbnailContainer">
             <div id="imported-content">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        fetch('../pages.html')
-                            .then(response => response.text())
-                            .then(data => {
-                                document.getElementById('imported-content').innerHTML = data;
-                            })
-                            .catch(error => {
-                                console.error('Error fetching content: ', error);
-                            });
-                    });
-                </script>
             </div>
         </div>
     </body>
