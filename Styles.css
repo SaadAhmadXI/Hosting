@@ -13,10 +13,20 @@ body {
     background-color: white;
     text-align: center;
     font-size: 2rem;
-    box-shadow: 1px 1px 10px 5px rgb(63, 61, 61);
+    box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
     margin-bottom: -0.7rem;
     margin: 0 2rem;
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.headp {
+    padding: 0 1rem;
+    background-color: white;
+    text-align: start;
+    font-size: 2rem;
+    box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
+    margin: 0 2rem;
+    margin-top: -1.2rem;
 }
 
 .titleH {
@@ -65,6 +75,10 @@ body {
     .head {
         margin: 0 0.8rem;
     }
+    .headp {
+        margin: 0 0.8rem;
+        margin-top: -1.2rem;
+    }
     .titleH {
         font-size: 2.5rem;
     }
@@ -83,6 +97,9 @@ body {
 }
 @media only screen and (max-width: 300px) {
     .head {
+        margin: 0 0.6rem;
+    }
+    .headp {
         margin: 0 0.6rem;
     }
     .titleH {
