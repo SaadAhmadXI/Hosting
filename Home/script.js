@@ -2,6 +2,7 @@ import { allSubdirectories } from '../data.js';
 
 const pageSubdirectories = allSubdirectories.slice(0, 9);
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const thumbnailContainer = document.querySelector(".body");
 
