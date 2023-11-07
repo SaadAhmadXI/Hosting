@@ -72,6 +72,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
     .head {
         margin: 0 0.8rem;
     }
@@ -94,8 +97,21 @@ body {
     .box img:hover {
         transform: scale(1.05);
     }
+    .foot {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -1rem;
+        position: sticky;
+    }
+    .footer {
+        font-size: 1.5vw;
+    }
 }
 @media only screen and (max-width: 300px) {
+    body {
+        width: 100%;
+    }
     .head {
         margin: 0 0.6rem;
     }
@@ -117,4 +133,40 @@ body {
     .box img:hover {
         transform: scale(1.05);
     }
+    .foot {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -1rem;
+        position: sticky;
+    }
+    .footer {
+        font-size: 1.5vw;
+    }
+}
+
+.foot {
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    margin-bottom: -1rem;
+    position: sticky;
+    background-color: black;
+}
+
+.footer {
+    background-color: black;
+    color: whitesmoke;
+    top: 100%;
+    font-size: 1.5vw;
+}
+
+.pol {
+    text-decoration: none;
+    position: relative;
+    top: -2rem;
+    right: 1rem;
+    color: whitesmoke;
+    font-size: 2vw;
+    float: right;
 }
