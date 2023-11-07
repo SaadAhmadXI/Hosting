@@ -45,7 +45,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 2rem;
+    min-height: calc(100vh - 150px);
 }
+
 
 .box {
     display: flex;
@@ -98,14 +100,16 @@ body {
         transform: scale(1.05);
     }
     .foot {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        margin-bottom: -1rem;
-        position: sticky;
+        display: block;
     }
     .footer {
         font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .foot {
+        width: 100%;
+        max-width: 100%;
     }
 }
 @media only screen and (max-width: 300px) {
@@ -134,12 +138,9 @@ body {
         transform: scale(1.05);
     }
     .foot {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        margin-bottom: -1rem;
-        position: sticky;
+        height: 40px;
     }
+
     .footer {
         font-size: 1.5vw;
     }
@@ -147,25 +148,21 @@ body {
 
 .foot {
     width: 100%;
-    padding: 1rem 1rem;
-    margin: 0 1rem;
-    margin-bottom: -1rem;
-    position: sticky;
+    position: relative;
+    padding-bottom: 1rem;
     background-color: black;
+    bottom: 0;
 }
 
 .footer {
     background-color: black;
     color: whitesmoke;
-    top: 100%;
     font-size: 1.5vw;
+    margin: 0 3rem;
 }
 
 .pol {
     text-decoration: none;
-    position: relative;
-    top: -2rem;
-    right: 4rem;
     color: whitesmoke;
     font-size: 2vw;
     float: right;
