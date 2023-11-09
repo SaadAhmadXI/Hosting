@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
 .head {
@@ -23,12 +24,11 @@ body {
     flex-wrap: wrap;
     box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
     background-color: white;
-    padding: 40px 12px;
+    padding: 40px 1rem;
     gap: 27px;
     justify-content: center;
     align-items: center;
     margin: 0 2rem;
-    min-height: calc(100vh - 150px);
 }
 
 .about,
@@ -54,8 +54,28 @@ body {
 .Download:hover {
     transform: scale(1.1);
 }
-.pp{
-    float = left;
+
+.foot {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    bottom: 0;
+}
+
+.footer {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.5vw;
+    margin: 0 3rem;
+}
+
+.pol {
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2vw;
+    float: right;
+    top: -10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -130,25 +150,4 @@ body {
     .footer {
         font-size: 1.5vw;
     }
-}
-
-.foot {
-    width: 100%;
-    position: relative;
-    background-color: black;
-    bottom: 0;
-}
-
-.footer {
-    background-color: black;
-    color: whitesmoke;
-    font-size: 1.5vw;
-    margin: 0 3rem;
-}
-
-.pol {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 2vw;
-    float: right;
 }
