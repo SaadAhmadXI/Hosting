@@ -67,6 +67,13 @@ body {
     transform: scale(1.05);
 }
 
+.name {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    text-align: center;
+}
+
 .search {
     position: relative;
     top: 2rem;
@@ -166,4 +173,10 @@ body {
     color: whitesmoke;
     font-size: 2vw;
     float: right;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+.pol:hover {
+    transform: scale(1.08);
 }
