@@ -68,7 +68,7 @@ hr {
 .screenshot,
 .req {
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem -0.3rem;
 }
 
 .pics img {
@@ -103,78 +103,6 @@ hr {
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 768px) {
-
-    .head {
-        font-size: 1rem;
-    }
-    
-    .body {
-        padding: 1rem;
-    }
-    
-    .title {
-        font-size: 1.2rem;
-    }
-    
-    .para {
-        font-size: 0.9rem;
-    }
-    
-    .Download {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    body {
-        width: 100%;
-    }
-    .head {
-        font-size: 0.2rem;
-    }
-
-    .body {
-        padding: 0.5rem;
-    }
-
-    .title {
-        font-size: 1rem;
-    }
-
-    .about,
-    .para,
-    .screenshot,
-    .req {
-        font-size: 0.8rem;
-    }
-
-    .list {
-        font-size: 0.8rem;
-    }
-
-    .Download {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-    .pics img {
-        max-width: 80%;
-        height: auto;
-        margin: 0.5rem;
-    }
-    .foot {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        margin-bottom: -1rem;
-        position: sticky;
-    }
-    .footer {
-        font-size: 1.5vw;
-    }
-}
-
 .foot {
     width: 100%;
     padding: 1rem 1rem;
@@ -189,14 +117,58 @@ hr {
     color: whitesmoke;
     top: 100%;
     font-size: 1.5vw;
+    display: flex;
+    gap: 7.8vw;
 }
 
 .pol {
     text-decoration: none;
-    position: relative;
-    top: -2rem;
-    right: 1rem;
     color: whitesmoke;
-    font-size: 2vw;
-    float: right;
+    transition: 1s ease;
+}
+
+.pol:hover {
+    transform: scale(1.08);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .head {
+        font-size: 1rem;
+    }
+    .titleH {
+        font-size: 2.6rem;
+    }
+    .body {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+    }
+    
+    .para {
+        font-size: 0.9rem;
+        margin: 1rem 0.3rem;
+    }
+    
+    .Download {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .titleH {
+        font-size: 1.2rem;
+    }
+    .footer {
+        font-size: 2vw;
+        position: relative;
+    }
+    .pol {
+        top: 0;
+        right: 0.5rem;
+        font-size: 2vw;
+    }
 }
