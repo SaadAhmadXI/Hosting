@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const thumbnailLink = document.createElement("a");
         thumbnailLink.href = url;
+        thumbnailLink.className = "name";
         thumbnailLink.target = "_blank";
         thumbnailLink.rel = "noopener noreferrer";
 
