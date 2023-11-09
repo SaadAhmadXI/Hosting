@@ -8,6 +8,7 @@ const allSubdirectories = [
         { name: "FlatOut 4 Total Insanity", thumbnail: "../FlatOut 4 Total Insanity/thumbnail.jpg", url: "https://onelinkgames.site/FlatOut 4 Total Insanity" },
         { name: "Vosphia", thumbnail: "../Vosphia/thumbnail.jpg", url: "https://onelinkgames.site/Vosphia" },
         { name: "Cyberpunk 2077", thumbnail: "../Cyberpunk 2077/thumbnail.jpg", url: "https://onelinkgames.site/Cyberpunk 2077" },
+        { name: "Sekiro Shadow Die Twice", thumbnail: "../Sekiro Shadow Die Twice/thumbnail.jpg", url: "https://onelinkgames.site/Sekiro Shadow Die Twice" },
 ];
 
 export { allSubdirectories };
