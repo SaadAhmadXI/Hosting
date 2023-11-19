@@ -11,16 +11,48 @@ body {
 .head {
     padding: 1rem;
     background-color: white;
-    text-align: center;
     font-size: 2rem;
     box-shadow: 1px 1px 10px 5px rgb(63, 61, 61);
     margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0;
+    margin-top: 0.4rem;
+    margin-right: -2rem;
 }
 
 .titleH {
     font-size: 3rem;
-    padding: 0.1 1rem;
-    margin: 0.2rem;
+    font-family: Arial, sans-serif;
+    margin: auto 0;
+}
+
+.headb {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1.3rem;
+    gap: 3vw;
+}
+
+.hbutton {
+    text-decoration: none;
+    color: black;
+}
+
+.imghome {
+    position: relative;
+    top: 0.3rem;
+}
+
+.accordion {
+    cursor: pointer;
 }
 
 .body {
@@ -82,7 +114,7 @@ hr {
     padding: 0;
     margin: 0;
     text-align: center;
-    font-size: x-large;
+    font-size: large;
 }
 
 .Download {
@@ -92,20 +124,23 @@ hr {
     padding: 1rem 2rem;
     color: white;
     background-color: blue;
-    border-radius: 2rem;
-    border: 5px solid rgb(93, 93, 228);
-    transition: transform 1s ease;
+    border-radius: 1.5rem;
+    border: 3px solid rgb(93, 93, 228);
+    transition: 1s ease;
     text-decoration: none;
     cursor: pointer;
 }
 
 .Download:hover {
     transform: scale(1.1);
+    background-color: rgb(64, 64, 73);
+    border: 3px solid rgb(6, 6, 6);
+    border-radius: 1.9rem;
 }
 
 .foot {
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 0 1rem;
     margin-bottom: -1rem;
     position: sticky;
@@ -121,24 +156,12 @@ hr {
     gap: 7.8vw;
 }
 
-.pol {
-    text-decoration: none;
-    color: whitesmoke;
-    transition: 1s ease;
+.copy {
+    font-size: 1.2vw;
 }
 
-.pol:hover {
-    transform: scale(1.08);
-}
+@media only screen and (max-width: 785px) {
 
-@media only screen and (max-width: 768px) {
-
-    .head {
-        font-size: 1rem;
-    }
-    .titleH {
-        font-size: 2.6rem;
-    }
     .body {
         padding: 1rem;
     }
@@ -156,11 +179,61 @@ hr {
         font-size: 1rem;
         padding: 0.5rem 1rem;
     }
+    .copy {
+        font-size: 2vw;
+    }  
+    .headb {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 1.3rem;
+        gap: 3vw;
+        font-size: 4vw;
+    }
+    .hbutton {
+        text-decoration: none;
+        color: black;
+    }
+    .accordion {
+        cursor: pointer;
+    }
+    .home {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .titleH {
+        font-size: 7vw;
+    }
+    .logo {
+        margin-left: 0;
+        width: auto;
+        height: auto;
+    }
+    
 }
 
 @media only screen and (max-width: 400px) {
+    
+    .logo {
+        margin-left: 0.4rem;
+    }
+    .logo img {
+        width: 43px;
+        height: 40px;
+        position: relative;
+        top: 0.3rem;
+        margin-right: 0.3rem;
+    }
     .titleH {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
+    }
+    .imghome {
+        display: none;
+    }
+    .hbutton {
+        font-size: medium;
     }
     .footer {
         font-size: 2vw;
@@ -170,5 +243,14 @@ hr {
         top: 0;
         right: 0.5rem;
         font-size: 2vw;
+    }
+    .copy {
+        font-size: 2.2vw;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .logo img {
+        display: none;
     }
 }
