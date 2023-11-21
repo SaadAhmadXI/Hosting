@@ -4,7 +4,7 @@ const allSubdirectories = [
         { name: "Hogwarts Legacy", thumbnail: "../Hogwarts Legacy/thumbnail.jpg", url: "https://onelinkgames.site/Hogwarts Legacy" },
         { name: "Horizon Zero Dawn", thumbnail: "../Horizon Zero Dawn/thumbnail.jpg", url: "https://onelinkgames.site/Horizon Zero Dawn" },
         { name: "Call of Duty Black Ops Cold War", thumbnail: "../Call of Duty Black Ops Cold War/thumbnail.jpg", url: "https://onelinkgames.site/Call of Duty Black Ops Cold War" },
-        { name: "Forza Horizon 5", thumbnail: "../Forza Horizan 5/thumbnail.jpg", url: "https://onelinkgames.site/Forza Horizan 5" },
+        { name: "Forza Horizon 5", thumbnail: "../Forza Horizon 5/thumbnail.jpg", url: "https://onelinkgames.site/Forza Horizon 5" },
         { name: "Red Dead Redemption 2", thumbnail: "../Red Dead Redemption 2/thumbnail.jpg", url: "https://onelinkgames.site/Red Dead Redemption 2" },
         { name: "Alan Wake 2", thumbnail: "../Alan Wake 2/thumbnail.jpg", url: "https://onelinkgames.site/Alan Wake 2" },
         { name: "Vosphia", thumbnail: "../Vosphia/thumbnail.jpg", url: "https://onelinkgames.site/Vosphia" },
