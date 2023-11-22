@@ -1,5 +1,5 @@
 const allSubdirectories = [
-        { name: "NARUTO X BORUTO Ultimate Ninja<br>STORM CONNECTIONS", thumbnail: "../NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS/thumbnail.jpg", url: "https://onelinkgames.site/NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS" },
+        { name: "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS", thumbnail: "../NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS/thumbnail.jpg", url: "https://onelinkgames.site/NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS" },
         { name: "Elden Ring", thumbnail: "../Elden Ring/thumbnail.jpg", url: "https://onelinkgames.site/Elden Ring" },
         { name: "Cyberpunk 2077", thumbnail: "../Cyberpunk 2077/thumbnail.jpg", url: "https://onelinkgames.site/Cyberpunk 2077" },
         { name: "Hogwarts Legacy", thumbnail: "../Hogwarts Legacy/thumbnail.jpg", url: "https://onelinkgames.site/Hogwarts Legacy" },
