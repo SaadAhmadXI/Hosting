@@ -66,6 +66,12 @@ body::-webkit-scrollbar-thumb:hover {
 .hbutton {
     text-decoration: none;
     color: black;
+    z-index: 2;
+}
+
+.hbutton:hover {
+    color: white;
+    background-color: black;
 }
 
 .imghome {
@@ -125,6 +131,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: relative;
     top: 2rem;
     left: 3rem;
+    z-index: 1;
 }
 /* pages */
 .headp {
@@ -192,8 +199,6 @@ body::-webkit-scrollbar-thumb:hover {
     .box img {
         width: 310px;
         height: 200px;
-        transition: transform 1s ease;
-        box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
     }
     .box img:hover {
         transform: scale(1.05);
@@ -220,6 +225,14 @@ body::-webkit-scrollbar-thumb:hover {
         font-size: 10.2vw;
         margin-left: -2.3rem;
     }
+    .box img {
+        width: 265px;
+        height: 155px;
+    }
+    
+    .box img:hover {
+        transform: scale(1.03);
+    }
     .last {
         font-size: 0.4rem;
     }
@@ -240,23 +253,23 @@ body::-webkit-scrollbar-thumb:hover {
     .accordion {
         left: 8vw;
       }
+    .hbutton {
+        font-size: medium;
+    }
     .body {
         margin: 0 0.6rem;
     }
     .box img {
         width: 225px;
-        height: 115px;
+        height: 135px;
         transition: transform 1s ease;
         box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
     }
     .box img:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
-    .foot {
-        height: 40px;
-    }
-
     .footer {
-        font-size: 1.5vw;
+        font-size: 0.5rem;
+        margin-left: 10px;
     }
 }
