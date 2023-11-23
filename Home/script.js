@@ -1,6 +1,6 @@
 import { allSubdirectories } from '../data.js';
 
-const pageSubdirectories = allSubdirectories.slice(0, 9);
+const pageSubdirectories = allSubdirectories.slice(0, 10);
 
 
 document.addEventListener("DOMContentLoaded", function() {
