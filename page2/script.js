@@ -1,6 +1,6 @@
 import { allSubdirectories } from '../data.js';
 
-const pageSubdirectories = allSubdirectories.slice(9, 18);
+const pageSubdirectories = allSubdirectories.slice(10, 19);
 
 document.addEventListener("DOMContentLoaded", function() {
     const thumbnailContainer = document.querySelector(".body");
