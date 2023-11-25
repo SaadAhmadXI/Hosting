@@ -45,6 +45,10 @@ body {
     text-decoration: none;
     color: black;
 }
+.hbutton:hover {
+    color: white;
+    background-color: rgb(90, 90, 90);
+}
 
 .imghome {
     position: relative;
