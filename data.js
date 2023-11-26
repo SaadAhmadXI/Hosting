@@ -10,6 +10,7 @@ const allSubdirectories = [
         { name: "Call of Duty Black Ops Cold War", thumbnail: "../Call of Duty Black Ops Cold War/thumbnail.jpg", url: "https://onelinkgames.site/Call of Duty Black Ops Cold War" },
         { name: "Alan Wake 2", thumbnail: "../Alan Wake 2/thumbnail.jpg", url: "https://onelinkgames.site/Alan Wake 2" },
         { name: "Vosphia", thumbnail: "../Vosphia/thumbnail.jpg", url: "https://onelinkgames.site/Vosphia" },
+        { name: "Ghost of Tsushima", thumbnail: "../Ghost of Tsushima/thumbnail.jpg", url: "https://onelinkgames.site/Ghost of Tsushima" },
         { name: "Battlefield 1", thumbnail: "../Battlefield 1/thumbnail.jpg", url: "https://onelinkgames.site/Battlefield 1" },
         { name: "FlatOut 4 Total Insanity", thumbnail: "../FlatOut 4 Total Insanity/thumbnail.jpg", url: "https://onelinkgames.site/FlatOut 4 Total Insanity" },
         { name: "Sekiro Shadow Die Twice", thumbnail: "../Sekiro Shadow Die Twice/thumbnail.jpg", url: "https://onelinkgames.site/Sekiro Shadow Die Twice" },
