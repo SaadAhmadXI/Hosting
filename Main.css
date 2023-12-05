@@ -5,31 +5,35 @@ body {
     background-size: cover;
     font-size: 16px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: cursive;
 }
 
 .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1rem;
-    background-color: white;
-    font-size: 2rem;
-    box-shadow: 1px 1px 10px 5px rgb(63, 61, 61);
-    margin-bottom: 0.6rem;
+    background-color: #ffffff;
+    font-size: 1.7rem;
+    box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    align-content: center;
-    justify-content: center;
+    z-index: 5;
 }
 
 .logo {
     margin: 0;
     margin-top: 0.4rem;
     margin-right: -2rem;
+    text-decoration: none;
 }
 
 .titleH {
     font-size: 3rem;
-    font-family: Arial, sans-serif;
+    position: relative;
+    left: 2.2rem;
+    text-decoration: none;
     margin: auto 0;
 }
 
@@ -41,17 +45,34 @@ body {
     gap: 3vw;
 }
 
+.hombutton {
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    z-index: 1;
+    font-size: larger;
+    margin: auto;
+    height: fit-content;
+    padding: 0 0.7rem;
+    border-radius: 20px;
+}
+
+.hbutton:hover,
+.hombutton:hover {
+    color: white;
+    background-color: black;
+    padding: 0 0.7rem;
+    border-radius: 20px;
+    box-shadow: 0.3px 2.5px 3px 1px rgb(147, 146, 146);
+}
+
 .hbutton {
     text-decoration: none;
     color: black;
 }
-.hbutton:hover {
-    color: white;
-    background-color: rgb(90, 90, 90);
-}
 
 .imghome {
     position: relative;
+    display: inline-block;
     top: 0.3rem;
 }
 
@@ -66,6 +87,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 7rem;
 }
 
 .thumbnail {
@@ -163,11 +185,32 @@ hr {
 .copy {
     font-size: 1.2vw;
 }
-
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 1340px) {
+    .rag {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .cu {
+        display: none;
+    }
+}
+@media only screen and (max-width: 810px) {
 
     .body {
         padding: 1rem;
+    }
+
+    .imghome:hover::after {
+        content: 'Home';
+        display: block;
+        position: absolute;
+        top: 100%;
+        background-color: rgba(14, 13, 13, 0.925);
+        color: #fff;
+        padding: 5px;
+        border-radius: 3vw;
+        left: -80%;
     }
     
     .title {
@@ -215,9 +258,13 @@ hr {
         width: auto;
         height: auto;
     }
-    
+    .imghome:hover::after {
+        left: -2vw;
+    }
 }
-
+@media only screen and (max-width: 480px) {
+    .h {display: none;}
+}
 @media only screen and (max-width: 400px) {
     
     .logo {
@@ -233,9 +280,6 @@ hr {
     .titleH {
         font-size: 1.7rem;
     }
-    .imghome {
-        display: none;
-    }
     .hbutton {
         font-size: medium;
     }
@@ -243,17 +287,12 @@ hr {
         font-size: 2vw;
         position: relative;
     }
-    .pol {
-        top: 0;
-        right: 0.5rem;
-        font-size: 2vw;
-    }
-    .copy {
-        font-size: 2.2vw;
-    }
 }
 
 @media only screen and (max-width: 325px) {
+    .titleH {
+        font-size: 1.7rem;
+    }
     .logo img {
         display: none;
     }

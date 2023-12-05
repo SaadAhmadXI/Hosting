@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@ body {
     background-size: cover;
     font-size: 16px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: cursive;
 }
 
 body::-webkit-scrollbar {
@@ -13,32 +14,31 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: rgb(207, 203, 203);
-    border-radius: 150vw;
-    margin-block: 0.5em;
+    background-color: rgb(252, 112, 112);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 117, 117);
-    outline: 1px solid slategrey;
-    border: 1px solid rgb(62, 62, 62);
+    background-color: rgb(117, 0, 0);
     border-radius: 150vw;
-
 }
+
 body::-webkit-scrollbar-thumb:hover {
-    background-color: gray;
+    background-color: rgb(92, 6, 6);
 }
 
+/* Header Styles */
 .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1rem;
-    background-color: white;
-    font-size: 2rem;
+    background-color: #ffffff;
+    font-size: 1.7rem;
     box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
-    margin-bottom: -0.7rem;
-    margin: 0 2rem;
-    margin-top: 0.7rem;
     display: flex;
     flex-direction: row;
+    z-index: 5;
 }
 
 .logo {
@@ -50,28 +50,64 @@ body::-webkit-scrollbar-thumb:hover {
 .titleH {
     position: relative;
     left: 2.2rem;
-    font-size: 3rem;
-    font-family: Arial, sans-serif;
     margin: auto 0;
+}
+
+.titleH a {
+    text-decoration: none;
+    color: #000;
 }
 
 .headb {
     display: flex;
+    position: relative;
     flex-direction: row;
-    margin: auto;
+    gap: 2rem;
+    margin-left: 3rem;
     margin-top: 1.3rem;
-    gap: 3vw;
 }
 
+.hombutton,
+.catbutton,
+.cbutton,
 .hbutton {
     text-decoration: none;
-    color: black;
-    z-index: 2;
+    color: rgb(12, 12, 12);
+    z-index: 1;
+    font-size: larger;
+    margin: auto;
+}
+
+.hombutton {
+    background-color: #000;
+    color: white;
+    height: fit-content;
+    padding: 0 0.7rem;
+    border-radius: 20px;
+    box-shadow: 0.3px 2.5px 3px 1px rgb(147, 146, 146);
+}
+
+#cat,
+#cat1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1.9rem;
 }
 
 .hbutton:hover {
     color: white;
     background-color: black;
+    padding: 0 0.7rem;
+    border-radius: 20px;
+    box-shadow: 0.3px 2.5px 3px 1px rgb(147, 146, 146);
+}
+
+.cbutton:hover {
+    color: white;
+    background-color: black;
+    padding: 0 0.7rem;
+    border-radius: 20px;
+    box-shadow: 0.3px 2.5px 3px 1px rgb(147, 146, 146);
 }
 
 .imghome {
@@ -79,39 +115,55 @@ body::-webkit-scrollbar-thumb:hover {
     top: 0.3rem;
 }
 
+/* Category List Styles */
+.catlist {
+    margin-left: -1.8rem;
+    margin-top: 1rem;
+    position: relative;
+    top: 0.2rem;
+    border: 2.5px solid black;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Accordion Styles */
 .accordion {
     width: 5em;
+    top: -0.34rem;
     margin: auto 0;
     font-family: Arial, sans-serif;
-    font-size: 2rem;
+    font-size: larger;
     position: relative;
-    left: 25vw;
-  }
+}
 
+/* Body Styles */
 .body {
     display: flex;
     flex-wrap: wrap;
     box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
-    background-color: white;
     padding: 40px 12px;
+    background-color: #ffffff;
     gap: 27px;
+    margin-top: 6.5rem;
     justify-content: center;
     align-items: center;
-    margin: 0 2rem;
     min-height: calc(100vh - 150px);
+    position: relative;
 }
 
-
+/* Box Styles */
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    color: rgb(240, 232, 232);
+    color: rgb(68, 68, 68);
+    z-index: 1;
 }
 
 .box img {
-    width: 400px;
-    height: 255px;
+    width: 330px;
+    height: 205px;
     transition: transform 1s ease;
     box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
 }
@@ -120,30 +172,54 @@ body::-webkit-scrollbar-thumb:hover {
     transform: scale(1.05);
 }
 
-.name {
+.box img:hover::after {
+    background-color: rgba(255, 255, 255, 0.582);
+    z-index: 4;
+}
+
+.box a {
     text-decoration: none;
-    color: black;
+}
+
+.name {
+    color: rgb(66, 66, 66);
+    text-decoration: none;
     font-size: larger;
     text-align: center;
 }
 
+.special-directory {
+    position: relative;
+    left: 10rem;
+}
+
+/* Search Styles */
 .search {
     position: relative;
-    top: 2rem;
-    left: 3rem;
+    top: 8.5rem;
+    left: 1rem;
     z-index: 1;
 }
-/* pages */
+
+/* Page Styles */
 .headp {
     padding: 0 1rem;
     background-color: white;
     text-align: start;
     font-size: 2rem;
     box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
-    margin: 0 2rem;
     margin-top: -1.2rem;
 }
 
+.headc {
+    padding: 0.1px 1rem;
+    background-color: white;
+    text-align: start;
+    box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
+    margin-top: 1.3rem;
+}
+
+/* Footer Styles */
 .foot {
     width: 100%;
     position: relative;
@@ -166,104 +242,112 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 1.47rem;
 }
 
-@media only screen and (max-width: 1200px) {
-    .accordion {
-        left: 18vw;
-      }
+/* Responsive Styles */
+@media only screen and (max-width: 1295px) {
+    .cbutton {
+        display: none;
+    }
 }
+
 @media only screen and (max-width: 980px) {
-    .accordion {
-        left: 11vw;
-      }
+    .hombutton,
+    .catbutton,
+    .hbutton {
+        font-size: 1.3rem;
+    }
 }
-@media only screen and (max-width: 600px) {
-    body {
-        width: 100%;
+@media only screen and (max-width: 850px) {
+    #cat {
+        flex-direction: column;
     }
-    .head {
-        margin: 0 0.8rem;
+    #cat label {
+        margin-left: 0.001rem;
     }
-    .headp {
-        margin: 0 0.8rem;
-        margin-top: -1.2rem;
+    #cat select {
+        width: 7rem;
+        position: relative;
+        top: -2.3rem;
+        left: 2rem;
+        margin-bottom: -2.3rem;
     }
-    .titleH {
-        font-size: 2rem;
+}
+@media only screen and (max-width: 645px) {
+    .hombutton {
+        display: none;
     }
-    .accordion {
-        left: 10.5vw;
-      }
-    .body {
-        margin: 0 0.8rem;
-    }
+
     .box img {
         width: 310px;
         height: 200px;
     }
+
     .box img:hover {
         transform: scale(1.05);
     }
-    .foot {
-        display: block;
-    }
+
     .footer {
         font-size: 1.5vw;
     }
 }
+
+@media only screen and (max-width: 545px) {
+    .titleH {
+        font-size: 10vw;
+    }
+    .accordion-content {
+        left: -10rem;
+    }
+    .accordion-header {
+        left: -2rem;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .foot {
         width: 100%;
         max-width: 100%;
     }
+
     .accordion {
         left: 8vw;
-      }
-      .logo {
+    }
+
+    .logo {
         display: none;
-      }
+    }
+
     .titleH {
         font-size: 10.2vw;
         margin-left: -2.3rem;
     }
+
     .box img {
         width: 265px;
         height: 155px;
     }
-    
+
     .box img:hover {
         transform: scale(1.03);
     }
+
     .last {
         font-size: 0.4rem;
     }
 }
+
 @media only screen and (max-width: 300px) {
-    body {
-        width: 100%;
-    }
-    .head {
-        margin: 0 0.6rem;
-    }
-    .headp {
-        margin: 0 0.6rem;
-    }
-    .titleH {
-        font-size: 9vw;
-    }
-    .accordion {
-        left: 8vw;
-      }
     .hbutton {
-        font-size: medium;
+        font-size: 1rem;
     }
-    .body {
-        margin: 0 0.6rem;
+    #cat label {
+        font-size: 1rem;
+    }
+    #cat select {
+        font-size: 1rem;
     }
     .box img {
         width: 225px;
         height: 135px;
-        transition: transform 1s ease;
-        box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
     }
     .box img:hover {
         transform: scale(1.03);

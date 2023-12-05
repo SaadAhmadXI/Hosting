@@ -1,8 +1,9 @@
 .accordion {
     width: 5em;
     margin: auto 0;
-    font-family: Arial, sans-serif;
+    font-family: cursive;
     font-size: 2rem;
+    z-index: 2;
   }
   
   .accordion-item {
@@ -20,11 +21,11 @@
     display: none;
     padding: 10px;
     z-index: 2;
+    background-color: white;
   }
   
   .accordion-item.active .accordion-content {
     display: block;
-    background: #f5f5f5;
     position: absolute;
     width: 13.5rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
@@ -34,7 +35,6 @@
   .accordion-header::after {
     content: '\25BC';
     display: inline-block;
-    position: absolute;
     transition: transform 0.2s ease;
   }
   
@@ -54,7 +54,6 @@
         content: '';
     }
     .accordion-item.active .accordion-content {
-        right: 8rem;
         width: 10rem;
     }
   }
@@ -79,6 +78,12 @@
     .accordion-item.active .accordion-content {
         width: 7rem;
     }
+    
+    .accordion-header {
+      position: relative;
+      top: -0.5rem;
+      left: 1rem;
+    }
     .accordion {
       position: relative;
       top: -0.7rem;
@@ -86,7 +91,12 @@
   }
   @media only screen and (max-width: 325px) {
     .accordion-item.active .accordion-content {
-      right: 0.2rem;
+      right: -1rem;
+    }
+    .accordion-header {
+      position: relative;
+      top: -0.5rem;
+      left: 1rem;
     }
     .accordion {
       position: relative;

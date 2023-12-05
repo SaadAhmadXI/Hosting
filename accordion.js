@@ -5,17 +5,33 @@ accordionItems.forEach(item => {
 
     function updateHeaderText() {
         const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-
-        if (windowWidth < 790) {
-            header.innerHTML = '&#9776;'; // Unicode character for ☰
-        } else {
-            header.textContent = 'About Us'; // Or any other default text
-        }
-        if (windowWidth < 400) {
-            document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a><br><a href="https://onelinkgames.site/Home/" class="hbutton">&#9830;Home</a>';
+        if (windowWidth > 1340) {
+            document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
         }
         else {
-            document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            if (windowWidth < 1340) {
+                document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Community/" class="hbutton">&#9830;Request&nbsp;A Game</a><br><a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            }
+            else {
+                document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            }
+            if (windowWidth < 1000) {
+                document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/contactus/" class="hbutton">&#9830;Contact&nbsp;Us</a><br><a href="https://onelinkgames.site/Community/" class="hbutton">&#9830;Request&nbsp;A&nbsp;Game</a><br><a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            }
+            else {
+                document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Community/" class="hbutton">&#9830;Request&nbsp;A Game</a><br><a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            }
+            if (windowWidth < 790) {
+                header.innerHTML = '&#9776;';
+            } else {
+                header.textContent = 'About Us';
+            }
+            if (windowWidth < 400) {
+                document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/Home/" class="hbutton">&#9830;Home</a><br><a href="https://onelinkgames.site/contactus/" class="hbutton">&#9830;Contact&nbsp;Us</a><br><a href="https://onelinkgames.site/Community/" class="hbutton">&#9830;Request&nbsp;A Game</a><br><a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            }
+            else {
+                document.getElementById("hm").innerHTML = '<a href="https://onelinkgames.site/contactus/" class="hbutton">&#9830;Contact&nbsp;Us</a><br><a href="https://onelinkgames.site/Community/" class="hbutton">&#9830;Request&nbsp;A Game</a><br><a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a>';
+            }
         }
     }
 

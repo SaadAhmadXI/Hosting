@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7592609212945867"
-        crossorigin="anonymous"></script>
-        <meta name="google-adsense-account" content="ca-pub-7592609212945867">
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>One Link Games | Page 2</title>
         <link rel="canonical" href="https://onelinkgames.site/Home/">
         <link rel="stylesheet" href="../Styles.css">
-        <script src="script.js" type="module"></script>
-        <script src="../data.js" type="module"></script>
+        <link rel="stylesheet" href="../accordion1.css">
         <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
-        <!-- Google tag (gtag.js) -->
+        <!-- Google AdSense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7592609212945867" crossorigin="anonymous"></script>
+        <meta name="google-adsense-account" content="ca-pub-7592609212945867">
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHG6GEKG1B"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-WHG6GEKG1B');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WHG6GEKG1B');
         </script>
-        <link rel="stylesheet" href="../accordion.css">
-    </head>
+    </head>    
     <body>
         <div class="head">
             <div class="logo"><img src="../Images/Logo.png" alt="" width="63px" height="60px"></div>
-            <h1 class="titleH"><span style="color: #064661;">One</span><span style="color: #cb0606;">Link</span>Games</h1>
+            <h1 class="titleH"><a href="https://onelinkgames.site/Home/"><span style="color: #064661;">One</span><span style="color: #cb0606;">Link</span>Games</a></h1>
             <div class="headb">
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-header"><span class="home">About us</span></div>
-                        <div class="accordion-content">
-                            <a href="https://onelinkgames.site/contactus/" class="hbutton">&#9830;Contact Us</a><br>
-                            <a href="https://onelinkgames.site/copyright/" class="hbutton">&#9830;Copyright</a><br>
-                            <a href="https://onelinkgames.site/dmca/" class="hbutton">&#9830;DMCA</a><br>
-                            <div id="hm">
-                            <a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a></div>
-                        </div>
+                <a href="https://onelinkgames.site/Home/" class="hombutton">Home</a>
+                <div id="cat1"><label for="categoryFilter" class="catbutton">Category:</label>
+                    <select id="categoryFilter" class="catlist">
+                        <option value="All">All</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Open World">Open World</option>
+                        <option value="Shooting">Shooting</option>
+                        <option value="Racing">Racing</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Survival">Survival</option>
+                    </select></div>
+                <a href="https://onelinkgames.site/contactus/" class="cbutton">&#9830;Contact&nbsp;Us</a>
+                <div class="accordion-item">
+                    <div class="accordion-header"><span class="home">About us</span></div>
+                    <div class="accordion-content">
+                        <a href="https://onelinkgames.site/copyright/" class="hbutton">&#9830;Copyright</a><br>
+                        <div id="cat">Hello</div>
+                        <a href="https://onelinkgames.site/dmca/" class="hbutton">&#9830;DMCA</a><br>
+                        <div id="hm">
+                        <a href="https://onelinkgames.site/Private%20Policy/" class="hbutton">&#9830;Private Policy</a></div>
                     </div>
                 </div>
+                <!-- <div><img src="https://shorturl.at/guxR5" alt="" width="40px" height="50px"></div> -->
             </div>
         </div>
         <input type="text" id="searchInput" class="search" placeholder="Search...">
         <div class="body" id="thumbnailContainer">
+        </div>
+        <div id="categoryFilter">
         </div>
         <div id="imported-content"></div>
         <footer class="foot">
@@ -54,6 +66,8 @@
                           <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div>
                 </div>
             </footer>
-        <script src="../accordion.js"></script>
+        <script src="script.js" type="module"></script>
+        <script src="../data.js" type="module"></script>
+        <script src="../accordion1.js"></script>
     </body>
 </html>
