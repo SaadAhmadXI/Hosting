@@ -21,7 +21,6 @@ function authenticateUser(username, password) {
         return false;
     }
 
-    // Check if the user already has an image URL
     const imageURL = existingUser ? existingUser.imageURL : `Images/user1.png`;
 
     currentUser = username;
@@ -41,13 +40,16 @@ function showAuthentication() {
     loginBtn.addEventListener('click', function () {
         const username = usernameInput.value;
         const password = passwordInput.value;
+        if (!username || !password) {
+            alert('Please enter both username and password.');
+            return;
+        }
 
         if (authenticateUser(username, password)) {
             authenticationDiv.classList.add('hidden');
             loadCommentsFromStorage();
             document.getElementById('comment-section').classList.remove('hidden');
         } else {
-            // Authentication failed, error message already displayed in authenticateUser function
         }
     });
 }
@@ -56,15 +58,33 @@ function loadCommentsFromStorage() {
     const comments = JSON.parse(localStorage.getItem('comments')) || [];
     const commentContainer = document.querySelector(".comments");
 
-    commentContainer.innerHTML = ""; // Clear existing comments
+    commentContainer.innerHTML = "";
 
     comments.forEach((comment, index) => {
         createCommentElement(comment, index);
     });
-
-    // Scroll to the bottom after loading comments
     commentContainer.scrollTop = commentContainer.scrollHeight;
 }
+
+function checkForNewComments() {
+    const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+    
+    if (storedComments.length > comments.length) {
+        const newComment = storedComments[storedComments.length - 1];
+        createCommentElement(newComment, comments.length);
+        comments = storedComments;
+    }
+}
+
+if (currentUser) {
+    document.getElementById('comment-section').classList.remove('hidden');
+    loadCommentsFromStorage();
+
+    setInterval(checkForNewComments, 5000);
+} else {
+    showAuthentication();
+}
+
 
 function createCommentElement(comment, index) {
     const newComment = document.createElement("div");
@@ -73,14 +93,12 @@ function createCommentElement(comment, index) {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const user = users.find(user => user.username === comment.username);
 
-    // Adjust the image path based on the username and a random seed
     let imageURL;
         if (comment.username === 'SaadAhmadXI') {
             imageURL = 'Images/userO.png';
             }
         else {
         const usernameSeed = hashString(comment.username);
-        // Use the seed to determine a random image
         const randomImageNumber = (usernameSeed % 6) + 1;
         imageURL = `Images/user${randomImageNumber}.png`;
         }
@@ -178,7 +196,6 @@ document.getElementById("comment-form").addEventListener("submit", function (eve
     loadCommentsFromStorage();
 });
 
-// Check if the user is already authenticated
 if (currentUser) {
     document.getElementById('comment-section').classList.remove('hidden');
     loadCommentsFromStorage();
