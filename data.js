@@ -13,8 +13,9 @@ const allSubdirectories = [
         { name: "Vosphia", thumbnail: "../Vosphia/thumbnail.jpg", url: "https://onelinkgames.site/Vosphia", categories: ["Open World","Survival"] },
         { name: "Ghost of Tsushima", thumbnail: "../Ghost of Tsushima/thumbnail.jpg", url: "https://onelinkgames.site/Ghost of Tsushima", categories: ["Action","Adventure","Open World"] },
         { name: "Battlefield 1", thumbnail: "../Battlefield 1/thumbnail.jpg", url: "https://onelinkgames.site/Battlefield 1", categories: "Shooting" },
-        { name: "FlatOut 4 Total Insanity", thumbnail: "../FlatOut 4 Total Insanity/thumbnail.jpg", url: "https://onelinkgames.site/FlatOut 4 Total Insanity", categories: "Racing" },
         { name: "Sekiro Shadow Die Twice", thumbnail: "../Sekiro Shadow Die Twice/thumbnail.jpg", url: "https://onelinkgames.site/Sekiro Shadow Die Twice", categories: ["Action","Adventure"] },
+        { name: "Starfield", thumbnail: "../Starfield/thumbnail.jpg", url: "https://onelinkgames.site/Starfield", categories: ["Action","Sci-Fi"] },
+        { name: "FlatOut 4 Total Insanity", thumbnail: "../FlatOut 4 Total Insanity/thumbnail.jpg", url: "https://onelinkgames.site/FlatOut 4 Total Insanity", categories: "Racing" },
         { name: "Gears of War Ultimate Edition Deluxe", thumbnail: "../Gears of War Ultimate Edition Deluxe/thumbnail.jpg", url: "https://onelinkgames.site/Gears of War Ultimate Edition Deluxe", categories: ["Action","Shooting"] },
 ];
 
