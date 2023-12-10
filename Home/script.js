@@ -10,17 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
         thumbnailContainer.innerHTML = "";
 
         subdirectories.forEach(subdirectory => {
-            const thumbnailBox = createThumbnailBox(subdirectory.name, subdirectory.thumbnail, subdirectory.url, subdirectory.categories);
+            const thumbnailBox = createThumbnailBox(subdirectory.name, subdirectory.thumbnail, subdirectory.url, subdirectory.categories, subdirectory.specialClass);
             thumbnailContainer.appendChild(thumbnailBox);
         });
     }
 
-    function createThumbnailBox(name, thumbnail, url, categories) {
+    function createThumbnailBox(name, thumbnail, url, categories, specialClass) {
         const thumbnailBox = document.createElement("div");
         thumbnailBox.className = "box";
 
         // Add category as a data attribute
         thumbnailBox.dataset.categories = categories;
+
+        if (specialClass) {
+            thumbnailBox.classList.add(specialClass);
+        }
 
         const thumbnailLink = document.createElement("a");
         thumbnailLink.href = url;
