@@ -106,8 +106,8 @@ function categoryText() {
         <option value="Fighting">Fighting</option>
         <option value="Horror">Horror</option>
         <option value="Survival">Survival</option>
-        <option value="Survival">Sci-Fi</option>
-        <option value="Survival">RPG</option></select>`;
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="RPG">RPG</option></select>`;
     }
     else {
         document.getElementById("cat").innerHTML = '';
@@ -123,8 +123,8 @@ function categoryText() {
         <option value="Fighting">Fighting</option>
         <option value="Horror">Horror</option>
         <option value="Survival">Survival</option>
-        <option value="Survival">Sci-Fi</option>
-        <option value="Survival">RPG</option></select>`;
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="RPG">RPG</option></select>`;
     }
 }
 
