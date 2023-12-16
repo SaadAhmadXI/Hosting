@@ -1,6 +1,7 @@
 const allSubdirectories = [
         { name: "Cyberpunk 2077", thumbnail: "../Cyberpunk 2077/thumbnail.jpg", url: "https://onelinkgames.site/Cyberpunk 2077", categories: ["Action" ,"Open World","Sci-Fi"] },
         { name: "Grand Theft Auto VI", thumbnail: "../Grand Theft Auto VI/thumbnail.jpg", url: "https://onelinkgames.site/Grand Theft Auto VI", categories: ["Action","Open World"] },
+        { name: "Control", thumbnail: "../Control/thumbnail.jpg", url: "https://onelinkgames.site/Control", categories: ["Adventure","Action","Sci-Fi"] },
         { name: "Elden Ring", thumbnail: "../Elden Ring/thumbnail.jpg", url: "https://onelinkgames.site/Elden Ring", categories: ["Adventure","Open World"] },
         { name: "Hogwarts Legacy", thumbnail: "../Hogwarts Legacy/thumbnail.jpg", url: "https://onelinkgames.site/Hogwarts Legacy", categories: ["Action","Open World"] },
         { name: "Horizon Zero Dawn", thumbnail: "../Horizon Zero Dawn/thumbnail.jpg", url: "https://onelinkgames.site/Horizon Zero Dawn", categories: ["Action","Adventure"]},
