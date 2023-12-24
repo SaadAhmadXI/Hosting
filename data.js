@@ -7,6 +7,7 @@ const allSubdirectories = [
         { name: "Horizon Zero Dawn", thumbnail: "../Horizon Zero Dawn/thumbnail.jpg", url: "https://onelinkgames.site/Horizon Zero Dawn/", categories: ["Action","Adventure"]},
         { name: "Lords of the Fallen", thumbnail: "../Lords of the Fallen/thumbnail.jpg", url: "https://onelinkgames.site/Lords of the Fallen/", categories: ["Action","RPG"]},
         { name: "NARUTO X BORUTO Ultimate Ninja Storm", thumbnail: "../NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS/thumbnail.jpg", url: "https://onelinkgames.site/NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS/", specialClass: "special-directory", categories: ["Action","Fighting"] },
+        { name: "Microsoft Flight Simulator", thumbnail: "../Microsoft Flight Simulator/thumbnail.jpg", url: "https://onelinkgames.site/Microsoft Flight Simulator/", specialClass: "special-directory", categories: ["Action","Fighting"] },
         { name: "Forza Horizon 5", thumbnail: "../Forza Horizon 5/thumbnail.jpg", url: "https://onelinkgames.site/Forza Horizon 5", categories: "Racing" },
         { name: "MARVEL SPIDER-MAN MILES MORALES", thumbnail: "../MARVEL SPIDER-MAN MILES MORALES/thumbnail.jpg", url: "https://onelinkgames.site/MARVEL SPIDER-MAN MILES MORALES/", categories: ["Action","Adventure"], specialClass: "special-directory" },
         { name: "Red Dead Redemption 2", thumbnail: "../Red Dead Redemption 2/thumbnail.jpg", url: "https://onelinkgames.site/Red Dead Redemption 2/", categories: ["Action","Adventure","Open World"] },
