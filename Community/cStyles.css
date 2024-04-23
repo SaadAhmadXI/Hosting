@@ -7,59 +7,25 @@ body {
     display: none;
 }
 
-#comment-section {
-    margin-top: 20px;
-    background-color: white;
-}
-
-.comment {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ccc;
-    position: relative;
-    margin: 10px 0;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.comments {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: white;
-    width: 80vw;
-    bottom: 2em;
-    height: 90vh;
-    overflow-y: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.comment-text {
-    margin-right: 3rem;
-}
-
-.user-details strong {
-    position: relative;
-    right: 1rem;
-    top: -1rem;
-}
-
-.user-details div {
+.discordbutton {
     position: relative;
     top: -1rem;
-    left: 2.5rem;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    border: rgb(54, 101, 232);
+    cursor: pointer;
+    color: white;
+    background-color: rgb(54, 101, 232);
+    border-radius: 0.6rem;
+    text-decoration: none;
 }
 
-.user-details > img {
-    width: 30px;
-    height: 30px;
-    top: 0.3rem;
-    position: relative;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover;
-    object-position: center;
+.discordbutton::hover {
+    border: 2px rgb(127, 124, 124);
+}
+
+.Comments {
+    width: 100%;
 }
 
 .comments::-webkit-scrollbar {
@@ -79,40 +45,6 @@ body {
     background-color: rgba(155, 141, 141, 0.332);
 }
 
-.commentp {
-    display: flex;
-    position: fixed;
-    width: 90%;
-    left: 5%;
-    bottom: 2em;
-} 
-
-.commentw {
-    position: relative;
-    background-color: rgb(182, 182, 182);
-    border: 1px solid gray;
-    border-radius: 50vw;
-    padding: 10px;
-    width: 80%;
-    left: 5%;
-}
-
-.commentb {
-    background-color: rgb(182, 182, 182);
-    cursor: pointer;
-    position: relative;
-    padding: 0.4em 0.7em;
-    border: 1px solid gray;
-    border-radius: 100%;
-    font-size: large;
-    color: rgb(8, 145, 40);
-    left: 5%;
-}
-
-.commentb:hover {
-    background-color: rgb(131, 129, 129);
-    color: rgb(255, 255, 255);
-}
 
 
 #authentication {
