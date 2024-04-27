@@ -21,6 +21,7 @@ const allSubdirectories = [
         { name: "Starfield", thumbnail: "../Starfield/thumbnail.jpg", url: "https://onelinkgames.site/Starfield", categories: ["Action","Sci-Fi","RPG"] },
         { name: "FlatOut 4 Total Insanity", thumbnail: "../FlatOut 4 Total Insanity/thumbnail.jpg", url: "https://onelinkgames.site/FlatOut 4 Total Insanity/", categories: "Racing" },
         { name: "Gears of War Ultimate Edition Deluxe", thumbnail: "../Gears of War Ultimate Edition Deluxe/thumbnail.jpg", url: "https://onelinkgames.site/Gears of War Ultimate Edition Deluxe/", categories: ["Action","Shooting"] },
+        { name: "FIFA 18", thumbnail: "../FIFA 18/thumbnail.jpg", url: "https://onelinkgames.site/FIFA 18/", categories: "Sports" },
 ];
 
 export { allSubdirectories };
