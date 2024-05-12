@@ -161,20 +161,72 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 1;
 }
 
-.box img {
-    width: 330px;
-    height: 205px;
-    transition: transform 1s ease;
-    box-shadow: 1px 1px 10px 5px rgb(127, 124, 124);
+.Imagebox{
+    overflow: hidden;
+    width: 325px;
+    height: 200px;
+    box-shadow: 3px 4px 10px 1px rgb(127, 124, 124);
+    background-color: rgb(127, 124, 124);
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 5s ease;
 }
 
-.box img:hover {
+.Imagebox:hover {
+    scale: 1.05;
+}
+
+.Imagebox img {
+    width: 330px;
+    height: 205px;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 1s ease;
+}
+
+.Imagebox img:hover {
+    width: 305px;
+    height: 187px;
     transform: scale(1.05);
 }
 
-.box img:hover::after {
+.Imagebox img:hover::after {
     background-color: rgba(255, 255, 255, 0.582);
     z-index: 4;
+}
+
+.Imagebox::before{
+    position: absolute;
+    content: '';
+    width: 160%;
+    height: 90%;
+    transform: rotate(45deg);
+}
+
+.Imagebox:hover::before {
+    background-color: red;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(-360deg) saturate(1000%);
+    }
+}
+
+.Imagebox::after {
+    position: absolute;
+    content: '';
+    inset: 8px;
+    background-color: rgb(35, 34, 34);
+    border-radius: 8px;
 }
 
 .box a {
@@ -281,16 +333,18 @@ body::-webkit-scrollbar-thumb:hover {
     .hombutton {
         display: none;
     }
-
-    .box img {
+    .Imagebox {
+        width: 305px;
+        height: 195px;
+    }
+    .Imagebox img {
         width: 310px;
         height: 200px;
     }
-
     .box img:hover {
-        transform: scale(1.05);
+        width: 288px;
+        height: 184px;
     }
-
     .footer {
         font-size: 1.5vw;
     }
@@ -327,12 +381,23 @@ body::-webkit-scrollbar-thumb:hover {
         margin-left: -2.3rem;
     }
 
-    .box img {
+    .Imagebox {
+        width: 263px;
+        height: 150px;
+    }
+
+    .Imagebox:hover {
+        transform: scale(1.03);
+    }
+
+    .Imagebox img {
         width: 265px;
         height: 155px;
     }
 
     .box img:hover {
+        width: 255px;
+        height: 145px;
         transform: scale(1.03);
     }
 
@@ -354,12 +419,17 @@ body::-webkit-scrollbar-thumb:hover {
     #cat select {
         font-size: 1rem;
     }
-    .box img {
+    .Imagebox {
+        width: 220px;
+        height: 130px;
+    }
+    .Imagebox img {
         width: 225px;
         height: 135px;
     }
     .box img:hover {
-        transform: scale(1.03);
+        width: 212px;
+        height: 125px;
     }
     .footer {
         font-size: 0.5rem;

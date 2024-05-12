@@ -1,6 +1,6 @@
 import { allSubdirectories } from '../data.js';
 
-const pageSubdirectories = allSubdirectories.slice(0, 16);
+const pageSubdirectories = allSubdirectories.slice(0, 21);
 
 document.addEventListener("DOMContentLoaded", function() {
     const thumbnailContainer = document.querySelector(".body");
@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
         thumbnailLink.target = "_blank";
         thumbnailLink.rel = "noopener noreferrer";
 
+        const thumbnailImageBox = document.createElement("div");
+        thumbnailImageBox.className = "Imagebox";
+
         const thumbnailImage = document.createElement("img");
         thumbnailImage.src = thumbnail;
         thumbnailImage.alt = "Thumbnail";
@@ -40,7 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
         thumbnailTitle.textContent = name;
 
         thumbnailLink.appendChild(thumbnailImage);
+        thumbnailLink.appendChild(thumbnailImageBox);
         thumbnailLink.appendChild(thumbnailTitle);
+        thumbnailImageBox.appendChild(thumbnailImage);
         thumbnailBox.appendChild(thumbnailLink);
 
         return thumbnailBox;
