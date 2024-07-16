@@ -3,6 +3,7 @@ const allSubdirectories = [
         { name: "Grand Theft Auto VI", thumbnail: "../Grand Theft Auto VI/thumbnail.jpg", url: "https://onelinkgames.site/Grand Theft Auto VI/", categories: ["Action","Open World"] },
         { name: "Control", thumbnail: "../Control/thumbnail.jpg", url: "https://onelinkgames.site/Control/", categories: ["Adventure","Action","Sci-Fi"] },
         { name: "Elden Ring", thumbnail: "../Elden Ring/thumbnail.jpg", url: "https://onelinkgames.site/Elden Ring/", categories: ["Adventure","Open World"] },
+        { name: "For Honor", thumbnail: "../For Honor/thumbnail.jpg", url: "https://onelinkgames.site/For Honor/", categories: ["Adventure","Action"] },
         { name: "Hogwarts Legacy", thumbnail: "../Hogwarts Legacy/thumbnail.jpg", url: "https://onelinkgames.site/Hogwarts Legacy/", categories: ["Action","Open World"] },
         { name: "Horizon Zero Dawn", thumbnail: "../Horizon Zero Dawn/thumbnail.jpg", url: "https://onelinkgames.site/Horizon Zero Dawn/", categories: ["Action","Adventure"]},
         { name: "Lords of the Fallen", thumbnail: "../Lords of the Fallen/thumbnail.jpg", url: "https://onelinkgames.site/Lords of the Fallen/", categories: ["Action","RPG"]},
@@ -24,4 +25,15 @@ const allSubdirectories = [
         { name: "FIFA 18", thumbnail: "../FIFA 18/thumbnail.jpg", url: "https://onelinkgames.site/FIFA 18/", categories: "Sports" },
 ];
 
+const topranking = [
+        { name: "Forza Horizon 5", thumbnail: "../Forza Horizon 5/thumbnail.jpg", url: "https://onelinkgames.site/Forza Horizon 5", categories: "Racing" },
+        { name: "Cyberpunk 2077", thumbnail: "../Cyberpunk 2077/thumbnail.jpg", url: "https://onelinkgames.site/Cyberpunk 2077/", categories: ["Action" ,"Open World","Sci-Fi"] },
+        { name: "Grand Theft Auto VI", thumbnail: "../Grand Theft Auto VI/thumbnail.jpg", url: "https://onelinkgames.site/Grand Theft Auto VI/", categories: ["Action","Open World"] },
+        { name: "Red Dead Redemption 2", thumbnail: "../Red Dead Redemption 2/thumbnail.jpg", url: "https://onelinkgames.site/Red Dead Redemption 2/", categories: ["Action","Adventure","Open World"] },
+        { name: "Control", thumbnail: "../Control/thumbnail.jpg", url: "https://onelinkgames.site/Control/", categories: ["Adventure","Action","Sci-Fi"] },
+        { name: "Starfield", thumbnail: "../Starfield/thumbnail.jpg", url: "https://onelinkgames.site/Starfield", categories: ["Action","Sci-Fi","RPG"] },
+        { name: "Horizon Zero Dawn", thumbnail: "../Horizon Zero Dawn/thumbnail.jpg", url: "https://onelinkgames.site/Horizon Zero Dawn/", categories: ["Action","Adventure"]},
+]
+
 export { allSubdirectories };
+export { topranking };
